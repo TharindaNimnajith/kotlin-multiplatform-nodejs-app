@@ -1,0 +1,25 @@
+plugins {
+    id 'org.jetbrains.kotlin.js' version '1.8.21'
+}
+
+group = 'me.asus'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation 'org.jetbrains.kotlinx:kotlinx-nodejs:0.0.7'
+}
+
+kotlin {
+    js {
+        binaries.executable()
+        nodejs {
+
+        }
+    }
+}
